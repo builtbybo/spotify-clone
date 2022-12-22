@@ -12,7 +12,6 @@ const CountryTracks = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data, isFetching, error } = useGetSongsByCountryQuery(country);
 
-
   useEffect(() => {
     axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_JWY6fGsMNWRV3dkGQlvLc7p7mIY1p')
       .then((res) => setCountry(res?.data?.location?.country))

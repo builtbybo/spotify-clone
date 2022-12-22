@@ -42,7 +42,7 @@ const SongDetails = ({ artistId }) => {
             )) : <p className="text-gray-400 text-base my-1">Sorry! Lyrics not currently available </p>}
         </div>
       </div>
-      <RelatedSongs 
+      <RelatedSongs
         data={data}
         isPlaying={isPlaying}
         activeSong={activeSong}
